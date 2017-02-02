@@ -36,12 +36,12 @@ Passwords::~Password()
 }
 
 void addWord(String* word) {
-	
+	//might be in driver
 	
 }
 
 void guess(int try_password, int num_matches){
-	
+	//might be in driver
 	
 }
 
