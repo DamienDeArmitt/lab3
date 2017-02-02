@@ -58,10 +58,7 @@ void Passwords::guess(int try_password, int num_matches){
 	}
  }
  
-int Passwords::bestGuess(){
-	 
-	 
- }
+
  
 String* Passwords::getOriginalWord(int index){
 	 
