@@ -35,22 +35,22 @@ Passwords::~Password()
 	delete words[];
 }
 
-void addWord(String* word) {
+void Passwords::addWord(String* word) {
 	//might be in driver
 	
 }
 
-void guess(int try_password, int num_matches){
+void Passwords::guess(int try_password, int num_matches){
 	//might be in driver
 	
 }
 
- int getNumberOfPasswordsLeft(){
+ int Passwords::getNumberOfPasswordsLeft(){
 	 
 	 
  }
  
- void displayViableWords(){
+ void Passwords::displayViableWords(){
 	 //display all words
 	for (int i = 0; i < max_words; i++)
 	{
@@ -58,12 +58,12 @@ void guess(int try_password, int num_matches){
 	}
  }
  
-int bestGuess(){
+int Passwords::bestGuess(){
 	 
 	 
  }
  
- String* getOriginalWord(int index){
+String* Passwords::getOriginalWord(int index){
 	 
 	 
  }
