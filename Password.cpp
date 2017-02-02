@@ -16,7 +16,7 @@ using namespace std;
 
 
 
-Password()
+Password::Password()
 {
 	max_words = 2;
 	for (int i = 0;i < max_words; i++)
@@ -24,13 +24,17 @@ Password()
 		words[i] = 0 //NULL
 	}
 	num_viable_passwords = 0;
+}
 
+Passwords::~Password()
+{
+	
+	
 }
 
 
 
-
-
+/*
 int Password::bestGuess()
 {
    int best_guess_index = -1;
@@ -91,3 +95,4 @@ int Password::bestGuess()
    delete all_iter;
    return best_guess_index;  //return a 1-based index into the all_words list of words (careful)
 }
+*/
