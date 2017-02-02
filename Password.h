@@ -18,7 +18,6 @@ class Password
 		~Password();	//deconstructor 
 		void addWord(String* word);
 		void guess(int try_password, int num_matches);
-		void guess(int try_password, int num_matches);
 		void displayViableWords();
 		int bestGuess();
 		String* getOriginalWord(int index);
