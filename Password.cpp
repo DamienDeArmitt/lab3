@@ -31,8 +31,8 @@ Password::Password()
 
 Passwords::~Password()
 {
-	
-	
+	//TODO will have to delete individual words
+	delete words[];
 }
 
 void addWord(String* word) {
@@ -51,8 +51,11 @@ void guess(int try_password, int num_matches){
  }
  
  void displayViableWords(){
-	 
-	 
+	 //display all words
+	for (int i = 0; i < max_words; i++)
+	{
+		cout << words[i] << endl;
+	}
  }
  
 int bestGuess(){
