@@ -1,3 +1,10 @@
+
+
+
+//sdglksdf;lkasdjfjk
+
+
+
 #include "Password.h"
 using CSC2110::ListArrayIterator;
 
@@ -32,6 +39,14 @@ Passwords::~Password()
 	
 }
 
+void displayViableWords()
+{
+	//display all words
+	for (int i = 0; i < max_words; i++)
+	{
+		cout << words[i] << endl;
+	}
+}
 
 
 /*
