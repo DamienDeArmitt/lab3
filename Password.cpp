@@ -32,6 +32,36 @@ Passwords::~Password()
 	
 }
 
+void addWord(String* word) {
+	
+	
+}
+
+void guess(int try_password, int num_matches){
+	
+	
+}
+
+ int getNumberOfPasswordsLeft(){
+	 
+	 
+ }
+ 
+ void displayViableWords(){
+	 
+	 
+ }
+ 
+int bestGuess(){
+	 
+	 
+ }
+ 
+ String* getOriginalWord(int index){
+	 
+	 
+ }
+
 
 
 /*
