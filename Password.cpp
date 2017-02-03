@@ -29,13 +29,13 @@ Password::Password()
 	all_words = new ListArray<String>();
 	viable_words = new ListArray<String>();
 	len = 0;
+	
 }
 
-Password::~Password()
-{
-	delete all_words;
+Password::~Password(){
 	
-	//~ListArray()
+	delete all_words;
+	delete viable_words;
 }
 
 void Password::guess(int try_password, int num_matches)
