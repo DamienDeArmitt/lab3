@@ -1,9 +1,9 @@
 #include "Password.h"
-<<<<<<< HEAD
+
 using CSC2110;
 =======
 #include "ListArrayIterator.h"
->>>>>>> 8a48652c11adbf8ae5d0b12de4670b6584ccbba1
+
 
 #include <iostream>
 using namespace std;
@@ -39,7 +39,7 @@ Password::~Password()
 		delete all_words[i];
 }
 
-<<<<<<< HEAD
+
 void addWord(String* word) {
 	
 	WriteFile(const char* file_name);
@@ -47,7 +47,7 @@ void addWord(String* word) {
 void Password::addWord(String* word)
 {
 	//might be in driver
->>>>>>> 8a48652c11adbf8ae5d0b12de4670b6584ccbba1
+
 	
 }
 
@@ -81,13 +81,8 @@ String* Password::getOriginalWord(int index)
  }
 
 
- 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8a48652c11adbf8ae5d0b12de4670b6584ccbba1
 int Password::bestGuess()
 {
    int best_guess_index = -1;
