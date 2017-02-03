@@ -1,5 +1,4 @@
 #include "Password.h"
-#include "ReadFile.h"
 //fill in includes, don't forget namespaces
 
 #include "ReadFile.h"
@@ -8,7 +7,8 @@
 
 #include <iostream>
 using namespace std;
-
+using CSC2110::String;
+//namespace csc
 
 
 //test push
