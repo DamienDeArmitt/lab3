@@ -2,7 +2,9 @@
 #include "ReadFile.h"
 //fill in includes, don't forget namespaces
 
-
+#include "ReadFile.h"
+#include "WriteFile.h"
+#include "String.h"
 
 #include <iostream>
 using namespace std;
@@ -10,7 +12,7 @@ using namespace std;
 
 
 //test push
-
+/*
 void addWords(Password* fh)
 {
    Keyboard* kb = Keyboard::getKeyboard();
@@ -61,11 +63,12 @@ void guessWords(Password* fh)
       numLeft = fh->getNumberOfPasswordsLeft();
    }
 }
-
+*/
 int main()
 {
-   Password* fallout = new Password();
-   addWords(fallout);
-   guessWords(fallout);
-   delete fallout;
+	Password* fallout = new Password();
+	addWords(fallout);
+	displayViableWords();
+   //guessWords(fallout);
+   //delete fallout;
 }

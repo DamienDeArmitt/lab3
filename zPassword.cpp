@@ -28,25 +28,28 @@ Password::Password()
 	max_words = 2;
 	for (int i = 0; i < max_words; i++)
 	{
-		words[i] = 0 //NULL
+		all_words[i] = 0 //NULL
 	}
 	num_viable_passwords = 0;
 }
 
 Passwords::~Password()
 {
-	
+	//TODO will have to delete individual words
+	delete words[];
 	
 }
 
 void displayViableWords()
 {
-	//display all words
+	//display all words  update to only show viable words
 	for (int i = 0; i < max_words; i++)
 	{
-		cout << words[i] << endl;
+		cout << all_words[i] << endl;
 	}
 }
+
+
 
 
 /*

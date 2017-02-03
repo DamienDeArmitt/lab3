@@ -1,8 +1,13 @@
 #include "Password.h"
+<<<<<<< HEAD
 using CSC2110;
+=======
+#include "ListArrayIterator.h"
+>>>>>>> 8a48652c11adbf8ae5d0b12de4670b6584ccbba1
 
 #include <iostream>
 using namespace std;
+//using CSC2110;
 
 
 
@@ -22,51 +27,67 @@ Password::Password()
 	max_words = 2;
 	for (int i = 0;i < max_words; i++)
 	{
-		words[i] = 0 //NULL
+		all_words[i] = 0 //NULL
 	}
-	num_viable_passwords = 0;
+	num_words = 0;
 }
-
-Passwords::~Password()
+/*
+Password::~Password()
 {
-	
-	
+	//TODO will have to delete individual words
+	for(int i = 0; i < num_words; i++)
+		delete all_words[i];
 }
 
+<<<<<<< HEAD
 void addWord(String* word) {
 	
 	WriteFile(const char* file_name);
+=======
+void Password::addWord(String* word)
+{
+	//might be in driver
+>>>>>>> 8a48652c11adbf8ae5d0b12de4670b6584ccbba1
 	
 }
 
-void guess(int try_password, int num_matches){
-	
+void Password::guess(int try_password, int num_matches)
+{
+	//might be in driver
 	
 }
 
- int getNumberOfPasswordsLeft(){
+ int Password::getNumberOfPasswordsLeft()
+ {
 	 
 	 
+ }
+ */
+ void Password::displayViableWords()
+ {
+	 //display all words
+	for (int i = 0; i < max_words; i++)
+	{
+		cout << all_words[i] << endl;
+	}
  }
  
- void displayViableWords(){
+
+/* 
+String* Password::getOriginalWord(int index)
+{
 	 
 	 
  }
+
+
  
-int bestGuess(){
-	 
-	 
- }
- 
- String* getOriginalWord(int index){
-	 
-	 
- }
 
 
+<<<<<<< HEAD
 
-
+=======
+>>>>>>> 8a48652c11adbf8ae5d0b12de4670b6584ccbba1
 int Password::bestGuess()
 {
    int best_guess_index = -1;
