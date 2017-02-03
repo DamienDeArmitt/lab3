@@ -65,7 +65,7 @@ int main()
 {
 	Password* fallout = new Password();
 	addWords(fallout);
-	displayViableWords();
-   guessWords(fallout);
-   delete fallout;
+    displayViableWords();
+    guessWords(fallout);
+    delete fallout;
 }

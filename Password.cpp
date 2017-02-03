@@ -21,16 +21,15 @@ using namespace std;
 Password::Password()
 {
 	all_words = new ListArray<String>*();
-	max_words = max_size;
+	viable_words = new ListArray<String>*();
+	
+	
 }
 
-Password::~Password()
+Password::~Password(){
 	
-}
-{
 	delete all_words;
-	
-	//~ListArray()
+	delete viable_words;
 }
 
 
