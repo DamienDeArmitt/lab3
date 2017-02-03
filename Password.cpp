@@ -1,12 +1,9 @@
-
-//sdfaasdfasdf
-
 #include "Password.h"
 using CSC2110::ListArrayIterator;
 
 #include <iostream>
 using namespace std;
-
+using CSC2110::ListArrayIterator;
 
 // Password() //constructor
 // ~Password() //destructor (there is work to do here, delete the individual words)
@@ -28,11 +25,12 @@ Password::Password()
 	}
 	num_words = 0;
 }
-
+/*
 Password::~Password()
 {
 	//TODO will have to delete individual words
-	delete all_words[];
+	for(int i = 0; i < num_words; i++)
+		delete all_words[i];
 }
 
 void Password::addWord(String* word)
@@ -52,18 +50,18 @@ void Password::guess(int try_password, int num_matches)
 	 
 	 
  }
- 
+ */
  void Password::displayViableWords()
  {
 	 //display all words
 	for (int i = 0; i < max_words; i++)
 	{
-		cout << words[i] << endl;
+		cout << all_words[i] << endl;
 	}
  }
  
 
- 
+/* 
 String* Password::getOriginalWord(int index)
 {
 	 
@@ -134,3 +132,4 @@ int Password::bestGuess()
    delete all_iter;
    return best_guess_index;  //return a 1-based index into the all_words list of words (careful)
 }
+*/

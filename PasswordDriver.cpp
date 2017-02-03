@@ -11,7 +11,7 @@ using namespace std;
 
 
 //test push
-
+/*
 void addWords(Password* fh)
 {
    Keyboard* kb = Keyboard::getKeyboard();
@@ -62,7 +62,7 @@ void guessWords(Password* fh)
       numLeft = fh->getNumberOfPasswordsLeft();
    }
 }
-
+*/
 int main()
 {
 	Password* fallout = new Password();
