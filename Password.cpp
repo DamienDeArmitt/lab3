@@ -1,14 +1,9 @@
 #include "Password.h"
-<<<<<<< HEAD
-using CSC2110;
-=======
 #include "ListArrayIterator.h"
->>>>>>> 8a48652c11adbf8ae5d0b12de4670b6584ccbba1
-
+#include "ListArray.h"
 #include <iostream>
 using namespace std;
 //using CSC2110;
-
 
 
 // Password() //constructor
@@ -24,30 +19,20 @@ using namespace std;
 
 Password::Password()
 {
-	max_words = 2;
-	for (int i = 0;i < max_words; i++)
-	{
-		all_words[i] = 0 //NULL
-	}
-	num_words = 0;
+	all_words = new ListArray<String>*();
+	
 }
-/*
+
 Password::~Password()
 {
 	//TODO will have to delete individual words
 	for(int i = 0; i < num_words; i++)
 		delete all_words[i];
 }
-
-<<<<<<< HEAD
-void addWord(String* word) {
-	
-	WriteFile(const char* file_name);
-=======
+/*
 void Password::addWord(String* word)
 {
 	//might be in driver
->>>>>>> 8a48652c11adbf8ae5d0b12de4670b6584ccbba1
 	
 }
 
@@ -84,10 +69,6 @@ String* Password::getOriginalWord(int index)
  
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8a48652c11adbf8ae5d0b12de4670b6584ccbba1
 int Password::bestGuess()
 {
    int best_guess_index = -1;
@@ -148,3 +129,4 @@ int Password::bestGuess()
    delete all_iter;
    return best_guess_index;  //return a 1-based index into the all_words list of words (careful)
 }
+*/

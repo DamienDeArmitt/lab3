@@ -7,11 +7,8 @@
 
 #include <iostream>
 using namespace std;
-using CSC2110::String;
 //namespace csc
 
-
-//test push
 /*
 void addWords(Password* fh)
 {
