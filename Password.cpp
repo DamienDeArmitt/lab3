@@ -31,7 +31,7 @@ Password::Password()
 	}
 	num_words = 0;
 }
-/*
+
 Password::~Password()
 {
 	//TODO will have to delete individual words
@@ -42,8 +42,9 @@ Password::~Password()
 
 void addWord(String* word) {
 	
-	WriteFile(const char* file_name);
-
+	
+	
+}
 void Password::addWord(String* word)
 {
 	//might be in driver
@@ -62,7 +63,7 @@ void Password::guess(int try_password, int num_matches)
 	 
 	 
  }
- */
+
  void Password::displayViableWords()
  {
 	 //display all words
@@ -72,8 +73,6 @@ void Password::guess(int try_password, int num_matches)
 	}
  }
  
-
-/
 String* Password::getOriginalWord(int index)
 {
 	 

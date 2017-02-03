@@ -12,7 +12,7 @@ using CSC2110::String;
 
 
 //test push
-/*
+
 void addWords(Password* fh)
 {
    Keyboard* kb = Keyboard::getKeyboard();
@@ -63,12 +63,12 @@ void guessWords(Password* fh)
       numLeft = fh->getNumberOfPasswordsLeft();
    }
 }
-*/
+
 int main()
 {
 	Password* fallout = new Password();
 	addWords(fallout);
 	displayViableWords();
-   //guessWords(fallout);
-   //delete fallout;
+   guessWords(fallout);
+   delete fallout;
 }
