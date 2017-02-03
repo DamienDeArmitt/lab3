@@ -1,8 +1,9 @@
 #include "Password.h"
-using CSC2110::ListArrayIterator;
+using CSC2110;
 
 #include <iostream>
 using namespace std;
+
 
 
 // Password() //constructor
@@ -34,6 +35,7 @@ Passwords::~Password()
 
 void addWord(String* word) {
 	
+	WriteFile(const char* file_name);
 	
 }
 
@@ -64,7 +66,7 @@ int bestGuess(){
 
 
 
-/*
+
 int Password::bestGuess()
 {
    int best_guess_index = -1;
@@ -125,4 +127,3 @@ int Password::bestGuess()
    delete all_iter;
    return best_guess_index;  //return a 1-based index into the all_words list of words (careful)
 }
-*/
