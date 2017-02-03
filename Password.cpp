@@ -29,28 +29,32 @@ Password::Password()
 	num_words = 0;
 }
 
-Passwords::~Password()
+Password::~Password()
 {
 	//TODO will have to delete individual words
 	delete all_words[];
 }
 
-void Passwords::addWord(String* word) {
+void Password::addWord(String* word)
+{
 	//might be in driver
 	
 }
 
-void Passwords::guess(int try_password, int num_matches){
+void Password::guess(int try_password, int num_matches)
+{
 	//might be in driver
 	
 }
 
- int Passwords::getNumberOfPasswordsLeft(){
+ int Password::getNumberOfPasswordsLeft()
+ {
 	 
 	 
  }
  
- void Passwords::displayViableWords(){
+ void Password::displayViableWords()
+ {
 	 //display all words
 	for (int i = 0; i < max_words; i++)
 	{
@@ -60,7 +64,8 @@ void Passwords::guess(int try_password, int num_matches){
  
 
  
-String* Passwords::getOriginalWord(int index){
+String* Password::getOriginalWord(int index)
+{
 	 
 	 
  }
@@ -68,7 +73,7 @@ String* Passwords::getOriginalWord(int index){
 
  
 
-/*
+
 int Password::bestGuess()
 {
    int best_guess_index = -1;
@@ -129,4 +134,3 @@ int Password::bestGuess()
    delete all_iter;
    return best_guess_index;  //return a 1-based index into the all_words list of words (careful)
 }
-*/
