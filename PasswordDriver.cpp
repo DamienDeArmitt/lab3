@@ -1,7 +1,9 @@
 #include "Password.h"
 //fill in includes, don't forget namespaces
 
-
+#include "ReadFile.h"
+#include "WriteFile.h"
+#include "String.h"
 
 #include <iostream>
 using namespace std;
@@ -63,8 +65,9 @@ void guessWords(Password* fh)
 
 int main()
 {
-   Password* fallout = new Password();
-   addWords(fallout);
-   guessWords(fallout);
-   delete fallout;
+	Password* fallout = new Password();
+	addWords(fallout);
+	displayViableWords();
+   //guessWords(fallout);
+   //delete fallout;
 }
