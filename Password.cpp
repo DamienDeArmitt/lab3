@@ -1,7 +1,7 @@
 #include "Password.h"
 
 using CSC2110;
-=======
+
 #include "ListArrayIterator.h"
 
 
@@ -27,7 +27,7 @@ Password::Password()
 	max_words = 2;
 	for (int i = 0;i < max_words; i++)
 	{
-		all_words[i] = 0 //NULL
+		int all_words[i] = 0 //NULL
 	}
 	num_words = 0;
 }
@@ -43,7 +43,7 @@ Password::~Password()
 void addWord(String* word) {
 	
 	WriteFile(const char* file_name);
-=======
+
 void Password::addWord(String* word)
 {
 	//might be in driver
@@ -73,7 +73,7 @@ void Password::guess(int try_password, int num_matches)
  }
  
 
-/* 
+/
 String* Password::getOriginalWord(int index)
 {
 	 
