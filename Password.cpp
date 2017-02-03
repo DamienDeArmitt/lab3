@@ -1,6 +1,7 @@
 #include "Password.h"
 #include "ListArrayIterator.h"
 #include "ListArray.h"
+#include "Random.h"
 #include <iostream>
 using namespace std;
 //using CSC2110;
@@ -20,35 +21,30 @@ using namespace std;
 Password::Password()
 {
 	all_words = new ListArray<String>*();
-	
+	max_words = max_size;
 }
 
 Password::~Password()
 {
-	//TODO will have to delete individual words
-	for(int i = 0; i < num_words; i++)
-		delete all_words[i];
-}
-/*
-void Password::addWord(String* word)
-{
-	//might be in driver
+	delete all_words;
 	
+	//~ListArray()
 }
+
 
 void Password::guess(int try_password, int num_matches)
 {
-	//might be in driver
+	
 	
 }
 
- int Password::getNumberOfPasswordsLeft()
- {
+int Password::getNumberOfPasswordsLeft()
+{
 	 
 	 
- }
- */
- void Password::displayViableWords()
+}
+ 
+void Password::displayViableWords()
  {
 	 //display all words
 	for (int i = 0; i < max_words; i++)
@@ -57,16 +53,10 @@ void Password::guess(int try_password, int num_matches)
 	}
  }
  
-
-/* 
 String* Password::getOriginalWord(int index)
 {
-	 
-	 
- }
-
-
- 
+	 return all_words[getRandomInt(1, max_words)];
+}
 
 
 int Password::bestGuess()
@@ -129,4 +119,3 @@ int Password::bestGuess()
    delete all_iter;
    return best_guess_index;  //return a 1-based index into the all_words list of words (careful)
 }
-*/
