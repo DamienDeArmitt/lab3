@@ -4,12 +4,18 @@
 #include "ReadFile.h"
 #include "WriteFile.h"
 #include "String.h"
+#include "Keyboard.h"
 
 #include <iostream>
 using namespace std;
-//namespace csc
+using namespace CSC2110;
+// using CSC2110::Keyboard;
+// using CSC2110::ReadFile;
+// using CSC2110::WriteFile;
+// using CSC2110::String;
+// namespace csc
 
-/*
+
 void addWords(Password* fh)
 {
    Keyboard* kb = Keyboard::getKeyboard();
@@ -60,12 +66,12 @@ void guessWords(Password* fh)
       numLeft = fh->getNumberOfPasswordsLeft();
    }
 }
-*/
+
 int main()
 {
 	Password* fallout = new Password();
 	addWords(fallout);
-	displayViableWords();
-   //guessWords(fallout);
-   //delete fallout;
+	guessWords(fallout);
+    delete fallout;
+
 }

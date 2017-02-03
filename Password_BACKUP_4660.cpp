@@ -1,16 +1,19 @@
 #include "Password.h"
+<<<<<<< HEAD
 #include "ListArrayIterator.h"
 #include "ListArray.h"
-#include "String.h"
 #include "Random.h"
-//#include CSC2110>
+=======
+
+using CSC2110;
+
+#include "ListArrayIterator.h"
+
+
+>>>>>>> b35993bdb971e68834bf53a0c706800dd8d7a1b7
 #include <iostream>
 using namespace std;
-using namespace CSC2110;
-// using CSC2110::String;
-// using CSC2110::ListArrayIterator;
-// using CSC2110::ListArray;
-//using CSC2110::Random;
+//using CSC2110;
 
 
 // Password() //constructor
@@ -26,17 +29,44 @@ using namespace CSC2110;
 
 Password::Password()
 {
-	all_words = new ListArray<String>();
-	viable_words = new ListArray<String>();
-	len = 0;
+<<<<<<< HEAD
+	all_words = new ListArray<String>*();
+	max_words = max_size;
 }
 
 Password::~Password()
 {
 	delete all_words;
+=======
+	max_words = 2;
+	for (int i = 0;i < max_words; i++)
+	{
+		int all_words[i] = 0 //NULL
+	}
+	num_words = 0;
+}
+/*
+Password::~Password()
+{
+	//TODO will have to delete individual words
+	for(int i = 0; i < num_words; i++)
+		delete all_words[i];
+}
+
+
+void addWord(String* word) {
+	
+	WriteFile(const char* file_name);
+
+void Password::addWord(String* word)
+{
+	//might be in driver
+
+>>>>>>> b35993bdb971e68834bf53a0c706800dd8d7a1b7
 	
 	//~ListArray()
 }
+
 
 void Password::guess(int try_password, int num_matches)
 {
@@ -50,53 +80,31 @@ int Password::getNumberOfPasswordsLeft()
 	 
 }
  
- 
- void Password::displayWords(ListArray<String>* wordList)
+void Password::displayViableWords()
  {
-	 ListArrayIterator<String>* iter = wordList->iterator();
-	 while(iter->hasNext())
-	 {
-		String* word = iter->next();
-		word->displayString();
-		cout<<endl;
-	 }
+	 //display all words
+	for (int i = 0; i < max_words; i++)
+	{
+		cout << all_words[i] << endl;
+	}
  }
  
-int Password::getNumMatches(String* curr_word, String* word_guess)
-{
-	
-	
-}
- 
- 
-void Password::displayViableWords()
-{
-	displayWords(viable_words);
-}
-
+<<<<<<< HEAD
 String* Password::getOriginalWord(int index)
 {
-	//return all_words[getRandomInt(1, 10)];
+	 return all_words[getRandomInt(1, max_words)];
 }
+=======
 
-
-
-void Password::addWord(String* word)
+/
+String* Password::getOriginalWord(int index)
 {
-	if(all_words->size() == 0)
-	{
-		len = word->length();
-	}
-	
-	if(word->length() == len)
-	{
-		all_words->add(word);
-		viable_words->add(word);
-	}
-}
+	 
+	 
+ }
 
 
-
+>>>>>>> b35993bdb971e68834bf53a0c706800dd8d7a1b7
 
 
 int Password::bestGuess()

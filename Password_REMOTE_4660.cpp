@@ -1,16 +1,14 @@
 #include "Password.h"
+
+using CSC2110;
+
 #include "ListArrayIterator.h"
-#include "ListArray.h"
-#include "String.h"
-#include "Random.h"
-//#include CSC2110>
+
+
 #include <iostream>
 using namespace std;
-using namespace CSC2110;
-// using CSC2110::String;
-// using CSC2110::ListArrayIterator;
-// using CSC2110::ListArray;
-//using CSC2110::Random;
+//using CSC2110;
+
 
 
 // Password() //constructor
@@ -26,75 +24,61 @@ using namespace CSC2110;
 
 Password::Password()
 {
-	all_words = new ListArray<String>();
-	viable_words = new ListArray<String>();
-	len = 0;
+	max_words = 2;
+	for (int i = 0;i < max_words; i++)
+	{
+		int all_words[i] = 0 //NULL
+	}
+	num_words = 0;
 }
-
+/*
 Password::~Password()
 {
-	delete all_words;
+	//TODO will have to delete individual words
+	for(int i = 0; i < num_words; i++)
+		delete all_words[i];
+}
+
+
+void addWord(String* word) {
 	
-	//~ListArray()
+	WriteFile(const char* file_name);
+
+void Password::addWord(String* word)
+{
+	//might be in driver
+
+	
 }
 
 void Password::guess(int try_password, int num_matches)
 {
-	
+	//might be in driver
 	
 }
 
-int Password::getNumberOfPasswordsLeft()
-{
-	 
-	 
-}
- 
- 
- void Password::displayWords(ListArray<String>* wordList)
+ int Password::getNumberOfPasswordsLeft()
  {
-	 ListArrayIterator<String>* iter = wordList->iterator();
-	 while(iter->hasNext())
-	 {
-		String* word = iter->next();
-		word->displayString();
-		cout<<endl;
-	 }
+	 
+	 
+ }
+ */
+ void Password::displayViableWords()
+ {
+	 //display all words
+	for (int i = 0; i < max_words; i++)
+	{
+		cout << all_words[i] << endl;
+	}
  }
  
-int Password::getNumMatches(String* curr_word, String* word_guess)
-{
-	
-	
-}
- 
- 
-void Password::displayViableWords()
-{
-	displayWords(viable_words);
-}
 
+/
 String* Password::getOriginalWord(int index)
 {
-	//return all_words[getRandomInt(1, 10)];
-}
-
-
-
-void Password::addWord(String* word)
-{
-	if(all_words->size() == 0)
-	{
-		len = word->length();
-	}
-	
-	if(word->length() == len)
-	{
-		all_words->add(word);
-		viable_words->add(word);
-	}
-}
-
+	 
+	 
+ }
 
 
 
