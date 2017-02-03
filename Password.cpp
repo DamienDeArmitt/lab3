@@ -24,15 +24,15 @@ Password::Password()
 	max_words = 2;
 	for (int i = 0;i < max_words; i++)
 	{
-		words[i] = 0 //NULL
+		all_words[i] = 0 //NULL
 	}
-	num_viable_passwords = 0;
+	num_words = 0;
 }
 
 Passwords::~Password()
 {
 	//TODO will have to delete individual words
-	delete words[];
+	delete all_words[];
 }
 
 void Passwords::addWord(String* word) {
@@ -66,6 +66,7 @@ String* Passwords::getOriginalWord(int index){
  }
 
 
+ 
 
 /*
 int Password::bestGuess()
