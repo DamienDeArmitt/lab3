@@ -96,9 +96,6 @@ void Password::addWord(String* word)
 }
 
 
-
-
-
 int Password::bestGuess()
 {
    int best_guess_index = -1;

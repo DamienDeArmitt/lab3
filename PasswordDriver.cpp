@@ -62,7 +62,8 @@ void guessWords(Password* fh)
 
       fh->guess(guess, match);  //1-based index of the guessed word and the number of character matches
       fh->displayViableWords();
-
+		
+		
       numLeft = fh->getNumberOfPasswordsLeft();
    }
 }
