@@ -1,9 +1,10 @@
 #include "Password.h"
-using CSC2110::ListArrayIterator;
+#include "ListArrayIterator.h"
 
 #include <iostream>
 using namespace std;
-using CSC2110::ListArrayIterator;
+//using CSC2110;
+
 
 // Password() //constructor
 // ~Password() //destructor (there is work to do here, delete the individual words)

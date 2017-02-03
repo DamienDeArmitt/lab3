@@ -6,7 +6,7 @@
 #include "ReadFile.h"
 #include "WriteFile.h"
 #include "Text.h"
-using CSC2110::ListArrayIterator;
+#include "ListArray.h"
 
 class Password
 {
