@@ -68,14 +68,14 @@ void Password::guess(int try_password, int num_matches)
 int Password::getNumberOfPasswordsLeft()
 {
 	int words = 0;
-	//count words in viable_words?
+	ListArrayIterator<String>* iter = viable_words->iterator();
+	while(iter->hasNext())
+	{
+		words++;
+	}
+
 	
-	//while(viable_words->hasNext())
-	//{
-		//words++;
-		//viable_words->next();
-	//}
-	//return words;
+	return words;
 	
 }
  
@@ -83,7 +83,7 @@ int Password::getNumberOfPasswordsLeft()
  void Password::displayWords(ListArray<String>* wordList)
  {
 	 
-			cout << "Test"<< endl;
+	cout << "Test"<< endl;
 	 ListArrayIterator<String>* iter = wordList->iterator();
 	 while(iter->hasNext())
 	 {
