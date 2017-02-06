@@ -4,6 +4,7 @@
 #include "String.h"
 #include "Random.h"
 
+
 //#include CSC2110>
 #include <iostream>
 using namespace std;
@@ -12,7 +13,7 @@ using namespace CSC2110;
 // using CSC2110::String;
 // using CSC2110::ListArrayIterator;
 // using CSC2110::ListArray;
-//using CSC2110::random;
+using CSC2110::Random;
 
 
 // Password() //constructor
@@ -44,14 +45,20 @@ void Password::guess(int try_password, int num_matches)
 {
 	
 	//input
-	cout << "Enter your guess: "
-	cin >> guess;
+	
+	//cin >> guess;
 	//convert words into char arrays
-	
+	//compare(String* other)	//compare stings
 	//check matches
-	
 	//
-	
+	for(int i=0; i<num_matches; i++)
+	{
+		int matches = getNumMatches(try_password, viable_words[i])
+		if(num_matches >= matches)
+		{
+			viable_words->remove(i);
+		}
+	}
 }
 
 int Password::getNumberOfPasswordsLeft()
@@ -59,12 +66,12 @@ int Password::getNumberOfPasswordsLeft()
 	int words = 0;
 	//count words in viable_words?
 	
-	while(viable_words->hasNext())
-	{
-		words++;
-		viable_words->next();
-	}
-	return words;
+	//while(viable_words->hasNext())
+	//{
+		//words++;
+		//viable_words->next();
+	//}
+	//return words;
 	
 }
  
@@ -82,10 +89,17 @@ int Password::getNumberOfPasswordsLeft()
  
 int Password::getNumMatches(String* curr_word, String* word_guess)
 {
-	
-	
-	
-	
+	int matches= 0;
+	for (int i = 0; i < len; i++)
+	{
+		char word = curr_word->charAt(i);
+		char guess = word_guess->charAt(i);
+		if(word == guess)
+		{
+			matches++;
+		}
+	}
+	return matches;
 }
  
  
@@ -96,7 +110,8 @@ void Password::displayViableWords()
 
 String* Password::getOriginalWord(int index)
 {
-	//return all_words[getRandomInt(1, 10)];
+	//int index = getRandomInt(1, 10);
+	return all_words->get(index);
 	
 }
 
