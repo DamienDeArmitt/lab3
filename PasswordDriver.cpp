@@ -76,7 +76,13 @@ int main()
 {
 	Password* fallout = new Password();
 	addWords(fallout);
-	while(->size() > 1)
+	
+	//fix next 3 lines of code
+	//loop only until there is one word left
+	
+	int passLeft = viable_words->getNumberOfPasswordsLeft();
+	cout << passLeft;
+	while(passLeft > 1)
 	{	
 	guessWords(fallout);	
 	}
