@@ -6,7 +6,9 @@
 #include "String.h"
 #include "Keyboard.h"
 #include "Random.h"
+#include "ListArray.h"
 #include <iostream>
+
 using namespace std;
 using namespace CSC2110;
 // using CSC2110::Keyboard;
@@ -62,7 +64,7 @@ void guessWords(Password* fh)
 
       fh->guess(guess, match);  //1-based index of the guessed word and the number of character matches
       
-	//		cout << "TEst"<< endl;
+
 	  fh->displayViableWords();
 		
 	
@@ -74,15 +76,10 @@ int main()
 {
 	Password* fallout = new Password();
 	addWords(fallout);
-	while(1)
-	{
-		
-	
-	guessWords(fallout);
-		
+	while(->size() > 1)
+	{	
+	guessWords(fallout);	
 	}
-	
-	
     delete fallout;
 
 }
