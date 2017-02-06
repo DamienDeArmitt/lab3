@@ -1,6 +1,8 @@
 @echo off
 cls
 
+del passworddriver.o password.o
+
 ::Set drive letter if no args given
 if [%1] == [] goto noArgs
 goto yesArgs

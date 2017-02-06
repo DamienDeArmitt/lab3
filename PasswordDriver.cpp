@@ -5,7 +5,7 @@
 #include "WriteFile.h"
 #include "String.h"
 #include "Keyboard.h"
-
+#include "Random.h"
 #include <iostream>
 using namespace std;
 using namespace CSC2110;
@@ -60,11 +60,11 @@ void guessWords(Password* fh)
       delete match_str;
       cout << endl;
 
-      fh->guess(guess, match);  //1-based index of the guessed word and the number of character matches
-      fh->displayViableWords();
+      //fh->guess(guess, match);  //1-based index of the guessed word and the number of character matches
+      //fh->displayViableWords();
 		
-		
-      numLeft = fh->getNumberOfPasswordsLeft();
+	
+      //numLeft = fh->getNumberOfPasswordsLeft();
    }
 }
 
@@ -73,6 +73,9 @@ int main()
 	Password* fallout = new Password();
 	addWords(fallout);
 	guessWords(fallout);
+	
+	
+	
     delete fallout;
 
 }

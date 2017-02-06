@@ -7,9 +7,11 @@
 #include "WriteFile.h"
 #include "Text.h"
 #include "ListArray.h"
+#include "Random.h"
 
 using CSC2110::ListArray;
 using CSC2110::String;
+
 
 class Password
 {
