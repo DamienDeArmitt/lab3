@@ -43,22 +43,26 @@ Password::~Password()
 
 void Password::guess(int try_password, int num_matches)
 {
-	
-	//input
-	
-	//cin >> guess;
-	//convert words into char arrays
-	//compare(String* other)	//compare stings
-	//check matches
-	//
-	for(int i=0; i<num_matches; i++)
+	ListArray<String>* result = new ListArray<String>();
+	String* guess = all_words->get(try_password);
+	ListArrayIterator<String>* iter = viable_words->iterator();
+	while(iter->hasNext())
 	{
-		int matches = getNumMatches(try_password, viable_words[i])
-		if(num_matches >= matches)
+		String* curr = iter->next();
+		int matches = getNumMatches(guess, curr);
+		if(guess->compare(curr) == 0)
 		{
-			viable_words->remove(i);
+			continue;
 		}
+		if(num_matches == matches)
+		{
+			result->add(curr);
+		}
+		
 	}
+	delete viable_words;
+	viable_words = result;
+	delete iter;
 }
 
 int Password::getNumberOfPasswordsLeft()
@@ -78,6 +82,8 @@ int Password::getNumberOfPasswordsLeft()
  
  void Password::displayWords(ListArray<String>* wordList)
  {
+	 
+			cout << "Test"<< endl;
 	 ListArrayIterator<String>* iter = wordList->iterator();
 	 while(iter->hasNext())
 	 {

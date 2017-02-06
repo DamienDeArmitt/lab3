@@ -60,11 +60,13 @@ void guessWords(Password* fh)
       delete match_str;
       cout << endl;
 
-      //fh->guess(guess, match);  //1-based index of the guessed word and the number of character matches
-      //fh->displayViableWords();
+      fh->guess(guess, match);  //1-based index of the guessed word and the number of character matches
+      
+	//		cout << "TEst"<< endl;
+	  fh->displayViableWords();
 		
 	
-      //numLeft = fh->getNumberOfPasswordsLeft();
+      numLeft = fh->getNumberOfPasswordsLeft();
    }
 }
 
@@ -72,8 +74,13 @@ int main()
 {
 	Password* fallout = new Password();
 	addWords(fallout);
-	guessWords(fallout);
+	while(1)
+	{
+		
 	
+	guessWords(fallout);
+		
+	}
 	
 	
     delete fallout;
