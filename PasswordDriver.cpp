@@ -80,11 +80,13 @@ int main()
 	//fix next 3 lines of code
 	//loop only until there is one word left
 	
-	int passLeft = viable_words->getNumberOfPasswordsLeft();
-	cout << passLeft;
+	int passLeft = fallout->getNumberOfPasswordsLeft();
+	//cout << passLeft;
 	while(passLeft > 1)
 	{	
-	guessWords(fallout);	
+	guessWords(fallout);
+	passLeft = fallout->getNumberOfPasswordsLeft();
+	//cout << "Number of passwords left: "<<passLeft <<endl;
 	}
     delete fallout;
 
