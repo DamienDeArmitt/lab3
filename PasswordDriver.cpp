@@ -77,8 +77,6 @@ int main()
 	Password* fallout = new Password();
 	addWords(fallout);
 	
-	//fix next 3 lines of code
-	//loop only until there is one word left
 	
 	int passLeft = fallout->getNumberOfPasswordsLeft();
 	//cout << passLeft;
